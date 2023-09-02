@@ -1,7 +1,7 @@
 {
   "name": "@nephelaiio/logger",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Custom log utilities",
   "main": "logger.js",
   "scripts": {},
