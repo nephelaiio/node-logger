@@ -1,7 +1,7 @@
 {
   "name": "@nephelaiio/logger",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Custom log utilities",
   "main": "logger.js",
   "scripts": {},
@@ -29,6 +29,7 @@
     "typescript": "^5.1.3"
   },
   "dependencies": {
+    "@nephelaiio/logger": "^0.0.3",
     "winston": "^3.10.0"
   },
   "files": [
