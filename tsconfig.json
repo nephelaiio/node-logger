@@ -1,7 +1,10 @@
 {
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.test.ts"],
   "compilerOptions": {
     "target": "es2022",
     "lib": ["es2023"],
+    "outDir": "./dist",
 
     "module": "esnext",
     "moduleResolution": "node",
