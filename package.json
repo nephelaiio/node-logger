@@ -1,9 +1,10 @@
 {
   "name": "@nephelaiio/logger",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Custom log utilities",
   "main": "logger.js",
+  "types": "logger.d.ts",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -29,7 +30,6 @@
     "typescript": "^5.1.3"
   },
   "dependencies": {
-    "@nephelaiio/logger": "^0.0.3",
     "winston": "^3.10.0"
   },
   "files": [
