@@ -17,7 +17,7 @@ format: install
 build: install
 	npx ts-node esbuild.ts
 
-test:
+test: install
 	find test/ -name "*.txt" | \
 	sort | \
 	xargs -L 1 basename -s .txt | \
