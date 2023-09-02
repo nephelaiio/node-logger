@@ -6,7 +6,7 @@ const project = JSON.parse(readFileSync(resolve("./package.json"), "utf-8"));
 
 build({
   entryPoints: ["src/logger.ts"],
-  outfile: `dist/${project.main}`,
+  outdir: `dist/`,
   platform: "neutral",
   format: "esm",
   target: "esnext",

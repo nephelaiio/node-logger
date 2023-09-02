@@ -16,6 +16,7 @@ format: install
 
 build: install
 	npx ts-node esbuild.ts
+	npx tsc --project tsconfig.json --emitDeclarationOnly
 
 test: install
 	find test/ -name "*.txt" | \
