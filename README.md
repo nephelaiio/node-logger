@@ -30,9 +30,9 @@ npm install @nephelaiio/logger
 First, initialize the logger by specifying the logging level and optionally some initial messages.
 
 ```typescript
-import { init } from '@nephelaiio/logger';
+import { init } from "@nephelaiio/logger";
 
-init(level, 'info');
+init(level, "info");
 ```
 
 ### Logging
@@ -40,12 +40,12 @@ init(level, 'info');
 You can log messages at different levels using the utility methods.
 
 ```typescript
-import { debug, info, warn, error } from '@nephelaiio/logger';
+import { debug, info, warn, error } from "@nephelaiio/logger";
 
-debug('This is a debug message.');
-info('This is an informational message.');
-warn('This is a warning.');
-error('This is an error.');
+debug("This is a debug message.");
+info("This is an informational message.");
+warn("This is a warning.");
+error("This is an error.");
 ```
 
 ## API
