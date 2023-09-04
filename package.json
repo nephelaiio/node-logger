@@ -5,7 +5,6 @@
   "description": "Custom log utilities",
   "main": "logger.js",
   "types": "logger.d.ts",
-  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nephelaiio/node-logger.git"
