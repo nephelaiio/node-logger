@@ -30,8 +30,5 @@
   },
   "dependencies": {
     "winston": "^3.10.0"
-  },
-  "files": [
-    "dist"
-  ]
+  }
 }
