@@ -1,22 +1,26 @@
-.PHONY: install lint eslint prettier format built test
+.PHONY: install lint eslint prettier format build dist package test
 
 install:
-	npm ci
+	@npm ci 2>&1 >/dev/null
 
 eslint: install
-	npx eslint . --ext .ts
+	@npx eslint . --ext .ts
 
 prettier: install
-	npx prettier --check .
+	@npx prettier --check .
 
 lint: eslint prettier
 
 format: install
-	npx prettier --write .
+	@npx prettier --write .
 
-build: install
-	npx ts-node esbuild.ts
+build: install dist package
+
+dist:
+	npx ts-node ./esbuild.ts
 	npx tsc --project tsconfig.json --emitDeclarationOnly
+
+package:
 	cp package.json dist/
 
 test: install
