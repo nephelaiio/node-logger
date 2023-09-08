@@ -20,7 +20,7 @@ const stderrTransport = new transports.Console({
     })
   )
 });
-const logger = createLogger({ level: 'error', transports: [stderrTransport] });
+const global.__logger = createLogger({ level: 'error', transports: [stderrTransport] });
 
 function init(
   level: LogLevels,
@@ -40,10 +40,10 @@ const setInfo = (msgs: Messages = {}) => init('info', msgs);
 const setVerbose = (msgs: Messages = {}) => init('debug', msgs);
 const setWarn = (msgs: Messages = {}) => init('warn', msgs);
 const setQuiet = (msgs: Messages = {}) => init('error', msgs);
-const debug = (message: string) => logger.debug(message);
-const info = (message: string) => logger.info(message);
-const warn = (message: string) => logger.warn(message);
-const error = (message: string) => logger.error(message);
+const debug = (message: string) => __logger.debug(message);
+const info = (message: string) => __logger.info(message);
+const warn = (message: string) => __logger.warn(message);
+const error = (message: string) => __logger.error(message);
 
 export type { LogLevels };
 export {
